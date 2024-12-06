@@ -3,5 +3,11 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "module": "ESNext", // Asegúrate de usar "ESNext" o "ES6"
+    "target": "ESNext", // Asegúrate de que el objetivo sea compatible con ESModules
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
 }
